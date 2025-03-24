@@ -1,0 +1,185 @@
+/* ✅ Apply a modern dark theme */
+body {
+  margin: 0;
+  background-color: #0d1117; /* Dark Background */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* ✅ Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ✅ Stylish Buttons */
+button {
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Animated Input Fields */
+textarea {
+  transition: all 0.3s ease-in-out;
+  background-color: #222;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+textarea:focus {
+  background-color: #333;
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* ✅ Scam Detection Block (Dark Theme) */
+.scam-detection-block {
+  background: rgba(20, 24, 31, 0.95);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.scam-detection-block:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* ✅ Button Animations */
+.animated-button {
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.animated-button:hover {
+  transform: scale(1.05);
+  background: #c82333;
+}
+
+/* ✅ Scam Result Styling */
+.scam-result {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.alert-danger {
+  background-color: #b00020;
+  color: white;
+}
+
+.alert-success {
+  background-color: #008000;
+  color: white;
+}
+
+/* ✅ Background Animation */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(13, 17, 23, 1));
+}
+
+/* ✅ Typography Improvements */
+h1, h2, h3 {
+  font-weight: 700;
+  text-align: center;
+}
+
+.text-primary {
+  color: #007bff !important;
+}
+
+/* ✅ Smooth Alerts */
+.alert {
+  transition: all 0.4s ease-in-out;
+}
+
+/* ✅ Links */
+a {
+  color: #1e90ff;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #00bfff;
+  text-decoration: none;
+}
+/* ✅ History Page Improvements */
+.animated-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: linear-gradient(135deg, #222 0%, #111 100%); /* Dark gradient */
+  color: #f8f9fa; /* Light text for better readability */
+}
+
+.animated-card h5 {
+  color: #ffffff; /* Bright white for card title */
+}
+
+.animated-card p {
+  color: #cccccc; /* Slightly dimmed white for better contrast */
+}
+
+/* ✅ Alert Styling for Better Visibility */
+.alert {
+  background-color: #333; /* Dark gray background */
+  color: #f8f9fa; /* Light text */
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* ✅ Fix for Badge Visibility */
+.badge {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.bg-danger {
+  background-color: #dc3545 !important; /* Red for scam */
+  color: white !important;
+}
+
+.bg-success {
+  background-color: #28a745 !important; /* Green for safe */
+  color: white !important;
+}
+
+/* 🚀 Report Scam Form */
+.report-scam-card {
+  background-color: #1a1a1a;
+  color: white;
+  border-left: 5px solid #dc3545;
+  transition: transform 0.3s ease-in-out;
+}
+
+.report-scam-card:hover {
+  transform: scale(1.05);
+}
+/* 🚀 Scam Trends Cards */
+.trend-card {
+  background-color: #222;
+  color: white;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.trend-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+}
