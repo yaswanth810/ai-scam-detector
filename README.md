@@ -1,105 +1,88 @@
-🛡️ AI-Powered Scam Detection Backend
-A robust backend system designed to detect and prevent scams using advanced machine learning techniques. This project serves as the core engine for identifying fraudulent activities in various digital communications.
+# AI Scam Detector
 
-🚀 Features
-Machine Learning Integration: Utilizes trained models to analyze and classify text data for potential scams.
+## Overview
+The AI Scam Detector is a web application designed to identify and prevent scams using advanced machine learning techniques. It provides a user-friendly interface for scam detection, reporting, and educational resources.
 
-API Endpoints: Provides RESTful APIs for seamless integration with frontend applications.
+---
 
-Modular Architecture: Organized codebase with clear separation of concerns for scalability and maintainability.
+## Features
+- **Scam Detection**: Analyze text or URLs to detect potential scams.
+- **Scam Reporting**: Users can report scams to help others stay safe.
+- **Scam Prevention Tips**: Educational tips to avoid falling victim to scams.
+- **Scam History**: View past scam detection results.
+- **Dark Mode**: Toggle between light and dark themes for better accessibility.
 
-Environment Configuration: Supports environment variables for flexible deployment across different stages.
+---
 
-🧰 Tech Stack
-Backend Framework: Flask
+## Tech Stack
+- **Frontend**: React, Bootstrap
+- **Backend**: Flask (for API integration)
+- **Machine Learning**: scikit-learn, pandas, numpy
+- **Deployment**: Configured for platforms like Heroku
 
-Programming Language: Python
+---
 
-Machine Learning Libraries: scikit-learn, pandas, numpy
-
-API Testing: Postman or similar tools
-
-Deployment: Configured for platforms like Heroku
-
-📁 Project Structure
-pgsql
-Copy
-Edit
-├── api/
-│   └── routes.py
-├── flask_model/
-│   ├── model.pkl
-│   └── predict.py
-├── node_modules/
+## Project Structure
+```
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── src/
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── particlesConfig.js
+│   ├── reportWebVitals.js
+│   ├── service-worker.js
+│   ├── serviceWorkerRegistration.js
+│   ├── setupTests.js
+│   ├── components/
+│   │   ├── DarkModeToggle.js
+│   │   ├── FAQ.js
+│   │   ├── Footer.js
+│   │   ├── Navbar.js
+│   │   ├── ReportScam.js
+│   │   ├── ScamStats.js
+│   │   └── Tips.js
+│   ├── pages/
+│   │   ├── About.js
+│   │   ├── Contact.js
+│   │   ├── History.js
+│   │   ├── Home.js
+│   │   ├── NotFound.js
+│   │   └── Reports.js
+│   └── styles/
+│       └── Tips.css
 ├── .gitignore
-├── Procfile
-├── package-lock.json
 ├── package.json
-├── requirements.txt
-api/routes.py: Defines the API endpoints.
+├── README.md
+```
 
-flask_model/: Contains the machine learning model and prediction logic.
+---
 
-requirements.txt: Lists Python dependencies.
+## Installation & Setup
 
-Procfile: Specifies commands for deployment.
+### Prerequisites
+- Node.js and npm installed
 
-🔧 Installation & Setup
-Clone the Repository
-
-bash
-Copy
-Edit
-git clone https://github.com/yaswanth810/ai-scam-detector-backend.git
-cd ai-scam-detector-backend
-Create a Virtual Environment
-
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install Dependencies
-
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the Application
-
-bash
-Copy
-Edit
-python api/routes.py
-The API will be accessible at http://localhost:5000/.
-
-🧪 API Endpoints
-POST /predict
-
-Description: Analyzes input text and returns a prediction.
-
-Request Body:
-
-json
-Copy
-Edit
-{
-  "message": "Congratulations! You've won a prize."
-}
-Response:
-
-json
-Copy
-Edit
-{
-  "prediction": "scam",
-  "confidence": 0.92
-}
-📦 Deployment
-The application is configured for deployment on platforms like Heroku. Ensure the Procfile is correctly set up and environment variables are configured as needed.
-
-🤝 Contributing
-Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
-
-📄 License
-This project is licensed under the MIT License.
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yaswanth810/ai-scam-detector.git
+   cd ai-scam-detector
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+   The application will be accessible at `http://localhost:3000/`.
